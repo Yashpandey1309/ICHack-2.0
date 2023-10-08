@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Resources/favicon.ico" />
+    <meta
+      name="description"
+      content="This is platform to manage your energy consumption and save your electricity bill smartly by suggesting better options. 
+  Also this platform helps you check if your house can have solar panels and how much can you save through this.
+  There is also a blog page where you can get knowledge for saving and reusing items in your house."
+    />
+    <title>Energy Emanation Detector</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <!---------------------------------------- Navbar  --------------------------------------------------->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="./Resources/logobg.png" alt="logo"></label>
+      <ul>
+        <li><a href="Home.html">About Us</a></li>
+        <li><a href="index.html">Energy Manager</a></li>
+        <li><a class="active" href="SolarPanelChecker.html">Solar Panel Checker</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div id="solarPanel">
+      <h1 class="heading">Enter the details</h1>
+      <div class="inputDetails">
+        <h1 class="heads">Enter your House width</h1>
+        <input class="input1" type="number" placeholder="width(in inches)" />
+      </div>
+      <div class="inputDetails">
+        <h1 class="heads">Enter your House length</h1>
+        <input class="input1" type="number" placeholder="length(in inches)" />
+      </div>
+      <div class="inputDetails">
+        <h1 class="heads">Enter your Peak Sun Hours time</h1>
+        <input class="input1" type="number" placeholder="Time(in hours)" />
+      </div>
+      <button class="btn">Add</button>
+    </div>
+    <div class="table">
+      <div class="table-title">
+        <h3>details</h3>
+      </div>
+      <table class="table-fill">
+        <tbody class="table-hover">
+          <tr>
+            <td class="text-left">House Width(in inches)</td>
+            <td class="text-left">220 inches</td>
+          </tr>
+          <tr>
+            <td class="text-left">House length(in inches)</td>
+            <td class="text-left">400 inches</td>
+          </tr>
+          <tr>
+            <td class="text-left">Total Area(sq inches)</td>
+            <td class="text-left">88,000 sq. inches</td>
+          </tr>
+          <tr>
+            <td class="text-left">Peak hours of Sunlight(in hours)</td>
+            <td class="text-left">5.3 hours</td>
+          </tr>
+          <tr>
+            <td class="text-left s">Energy Consumed Per day(Kwh)</td>
+            <td class="text-left s">30 kwh</td>
+          </tr>
+          <tr>
+            <td class="text-left s">Total no. of Panels(65in X 40 in)</td>
+            <td class="text-left s">10</td>
+          </tr>
+          <tr>
+            <td class="text-left s">Cost of Paneling</td>
+            <td class="text-left s">Rs. 80,000</td>
+          </tr>
+          <!-- <tr>
+            <td class="text-left">Saved electricity bill</td>
+            <td class="text-left">Rs. 3000 </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./Resources/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is platform to manage your energy consumption and save your electricity bill smartly by suggesting better options. 
+    Also this platform helps you check if your house can have solar panels and how much can you save through this.
+    There is also a blog page where you can get knowledge for saving and reusing items in your house."
+    />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Energy Emanation Detector</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-------------------------------------- Navbar --------------------------------------------------------->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><img src="./Resources/logobg.png" alt="logo"></label>
+      <ul>
+        <li><a href="Home.html">About Us</a></li>
+        <li><a class="active" href="index.html">Energy Manager</a></li>
+        <li><a href="SolarPanelChecker.html">Solar Panel Checker</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!----------------------------------- Energy Manager ---------------------------------------------------------->
+    <div id="energyManager">
+      <h1 class="heading">Energy Manager</h1>
+      <div class="inputDevice">
+        <form>
+          <input
+            class="input"
+            type="text"
+            placeholder="Enter your Device Name"
+          />
+          <input class="input" type="text" placeholder="Enter your Device ID" />
+          <button class="btn">Add</button>
+        </form>
+      </div>
+
+      <div class="deviceDetails">
+        <div class="head">
+          <h1 class="deviceName">Device 1</h1>
+          <p class="deviceId">Device Id - 162831</p>
+        </div>
+        <div class="wrap-circles">
+          <div class="circle per-50">
+            <div class="inner">500 Watts</div>
+          </div>
+        </div>
+      </div>
+      <div class="deviceDetails">
+        <div class="head">
+            <h1 class="deviceName">Device 2</h1>
+            <p class="deviceId">Device Id - 173431</p>
+          </div>
+        <div class="wrap-circles">
+          <div class="circle per-60">
+            <div class="inner">600 Watts</div>
+          </div>
+        </div>
+      </div>
+      <div class="deviceDetails">
+        <div class="head">
+            <h1 class="deviceName">Device 3</h1>
+            <p class="deviceId">Device Id - 120031</p>
+          </div>
+        <div class="wrap-circles">
+          <div class="circle per-20">
+            <div class="inner">200 Watts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/e2ff678e0a.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
